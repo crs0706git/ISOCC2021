@@ -98,4 +98,4 @@ The following code labels the audio that is longer than 5-sec. The code analyzes
 Code:
 - tmr.py
 
-The following code contains functions for making a directory and path-joining function
+The following code contains functions for recording operation time and starting operation time. Simply, just use "datatime" library which is a basic Python library given when installed.
