@@ -96,6 +96,6 @@ The following code labels the audio that is longer than 5-sec. The code analyzes
 
 # 9. Utility
 Code:
-- 9_tmr.py
+- tmr.py
 
 The following code contains functions for making a directory and path-joining function
