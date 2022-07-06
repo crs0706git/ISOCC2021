@@ -24,7 +24,7 @@ https://github.com/karolpiczak/ESC-50
 - tqdm
 
 # 0. Preprocessings
-Codes:
+Code:
 - 0_make_esc10.py
 - 0_rename_files.py
 - 0_2mix_audio.py
@@ -80,7 +80,7 @@ The model structure is as follows:
 ![isocc_model](https://user-images.githubusercontent.com/67090206/176517258-99895ebb-685e-44a4-ba64-8bc73bc5b140.png)
 
 # 2. Windowing
-Codes:
+Code:
 - 2_2mix_audio_8sec.py
 - 2_2mix_audio_10sec.py
 - 2_2mix_audio_12sec.py
@@ -89,7 +89,7 @@ Codes:
 For the sample audio that is more than 5-sec, the code applies windowing, analyze for several times until the code analyze the entire duration.
 
 ## 2_2mix_audio_8sec.py / 2_2mix_audio_10sec.py / 2_2mix_audio_12sec.py
-The following codes are to prepare the audio longer than 5-sec, the audio duration that the model is trained already trained with.
+The following code are to prepare the audio longer than 5-sec, the audio duration that the model is trained already trained with.
 
 ![81012](https://user-images.githubusercontent.com/67090206/176685679-ea84505e-7c3b-484e-92e2-43cbcba3ede2.png)
 
