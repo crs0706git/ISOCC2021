@@ -22,8 +22,19 @@ https://github.com/karolpiczak/ESC-50
 
 # 0. Preprocessings
 Codes:
+- 0_make_esc10.py
+- 0_rename_files.py
 - 0_2mix_audio.py
 - 0_mfcc_converter.py
+
+## 0_make_esc10.py
+Before ESC50, ESC10 was made first. ESC10 consists of 10 classes and 40 audio files for each class. Each audio file is recorded at a 44.1kHz sample rate. <br/>
+Inside ESC50 folder, downloaded via the GitHub link provided, there is an audio folder and CSV file. The audio files inside the audio folder are named in specific digits and characters, indicating class, class number, a record taken number, etc. <br/>
+The CSV file (esc50.csv) has information like the corresponding class (category) for each audio file. Also, the CSV file contains information on whether the file was in ESC10 or not. With the CSV file, the following code makes the ESC10 dataset by checking if each file and class was in ESC10.
+
+## 0_rename_files.py
+With ESC10 made with 0_make_esc10.py, the new directory is made. The subdirectories named in class types are made in the same way, but the audio files in the subdirectories are renamed with class names and the specific number.
+Ex: 1st chainsaw audio file -> chainsaw0.wav
 
 ## 0_2mix_audio.py
 As explained above, the training tactic for this research was simultaneously training the model with single-label and multi-label audio set. For this purpose, the multi-label audio set (2-class mixture) was made with mixing each audio in the single-source audio dataset (ESC10).<br/>
